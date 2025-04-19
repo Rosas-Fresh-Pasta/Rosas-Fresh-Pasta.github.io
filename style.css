@@ -1,0 +1,93 @@
+:root {
+    --primary-color: #e94f37;
+    --secondary-color: #f6f6f6;
+    --text-color: #333;
+    --accent-color: #ffb400;
+    --font-family: 'Helvetica Neue', sans-serif;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  header p {
+    font-size: 1.25rem;
+  }
+  
+  main {
+    flex: 1;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  section {
+    margin-bottom: 2rem;
+  }
+  
+  .email-signup {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .email-signup input[type="email"] {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  .email-signup button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--accent-color);
+    border: none;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #ddd;
+    font-size: 0.9rem;
+  }
+  
+  @media (min-width: 600px) {
+    header h1 {
+      font-size: 3.5rem;
+    }
+  
+    header p {
+      font-size: 1.5rem;
+    }
+  }  
